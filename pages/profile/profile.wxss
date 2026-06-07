@@ -1,0 +1,104 @@
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding: 34rpx;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 36rpx;
+  color: #211600;
+  font-size: 46rpx;
+  font-weight: 950;
+  background: linear-gradient(135deg, #ffe66b, #ff9f1c);
+}
+
+.profile-main {
+  padding-left: 24rpx;
+}
+
+.nickname {
+  font-size: 38rpx;
+  font-weight: 900;
+}
+
+.level {
+  margin-top: 12rpx;
+  color: #ffdf7e;
+  font-size: 24rpx;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  padding: 30rpx 0;
+}
+
+.wallet-item {
+  flex: 1;
+  text-align: center;
+}
+
+.wallet-value {
+  color: #ffdf7e;
+  font-size: 46rpx;
+  font-weight: 950;
+}
+
+.wallet-label {
+  margin-top: 8rpx;
+  color: #a8a5b8;
+  font-size: 24rpx;
+}
+
+.wallet-line {
+  width: 1rpx;
+  height: 70rpx;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.compliance {
+  margin-top: 20rpx;
+  padding: 28rpx;
+}
+
+.compliance-title {
+  font-size: 30rpx;
+  font-weight: 850;
+}
+
+.compliance-desc {
+  margin-top: 12rpx;
+  color: #a8a5b8;
+  font-size: 24rpx;
+  line-height: 1.55;
+}
+
+.menu-list {
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 96rpx;
+  padding: 0 28rpx;
+  border-bottom: 1rpx solid rgba(255, 255, 255, 0.08);
+  font-size: 28rpx;
+}
+
+.menu-item:last-child {
+  border-bottom: 0;
+}
+
+.menu-arrow {
+  color: #777487;
+  font-size: 42rpx;
+}

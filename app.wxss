@@ -1,0 +1,98 @@
+page {
+  min-height: 100vh;
+  color: #f7f2dc;
+  background: #101018;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif;
+}
+
+view,
+text,
+button,
+image {
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-radius: 0;
+  background: transparent;
+}
+
+button::after {
+  border: 0;
+}
+
+.page-shell {
+  min-height: 100vh;
+  padding: 28rpx 28rpx 52rpx;
+  background: radial-gradient(circle at 18% 0%, rgba(255, 204, 77, 0.22), transparent 34%), radial-gradient(circle at 88% 12%, rgba(255, 99, 99, 0.17), transparent 30%), linear-gradient(180deg, #171722 0%, #101018 46%, #0b0b12 100%);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 36rpx 0 20rpx;
+}
+
+.section-title-main {
+  font-size: 36rpx;
+  font-weight: 800;
+  letter-spacing: 1rpx;
+}
+
+.section-title-sub {
+  color: #a8a5b8;
+  font-size: 24rpx;
+}
+
+.card-panel {
+  border: 1rpx solid rgba(255, 255, 255, 0.1);
+  border-radius: 32rpx;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 24rpx 80rpx rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(20rpx);
+}
+
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 84rpx;
+  border-radius: 999rpx;
+  color: #211600;
+  font-size: 28rpx;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffe66b 0%, #ffb32c 100%);
+  box-shadow: 0 16rpx 34rpx rgba(255, 190, 58, 0.32);
+}
+
+.ghost-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 78rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.18);
+  border-radius: 999rpx;
+  color: #f7f2dc;
+  font-size: 26rpx;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 42rpx;
+  padding: 0 18rpx;
+  border-radius: 999rpx;
+  color: #ffdf7e;
+  font-size: 22rpx;
+  background: rgba(255, 204, 77, 0.13);
+}
+
+.muted {
+  color: #a8a5b8;
+}

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/boxes/boxes",
+    "pages/cardbook/cardbook",
+    "pages/warehouse/warehouse",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "星赏卡机",
+    "navigationBarBackgroundColor": "#101018",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#101018",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#8f8fa3",
+    "selectedColor": "#ffcc4d",
+    "backgroundColor": "#15151f",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/boxes/boxes",
+        "text": "赏盒"
+      },
+      {
+        "pagePath": "pages/cardbook/cardbook",
+        "text": "卡册"
+      },
+      {
+        "pagePath": "pages/warehouse/warehouse",
+        "text": "仓库"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

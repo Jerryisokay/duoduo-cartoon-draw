@@ -1,0 +1,33 @@
+<view class="page-shell profile-page">
+  <view class="profile-card card-panel">
+    <view class="avatar">星</view>
+    <view class="profile-main">
+      <view class="nickname">{{user.nickname}}</view>
+      <view class="level">{{user.level}}</view>
+    </view>
+  </view>
+
+  <view class="wallet card-panel">
+    <view class="wallet-item">
+      <view class="wallet-value">{{user.balance}}</view>
+      <view class="wallet-label">星币余额</view>
+    </view>
+    <view class="wallet-line"></view>
+    <view class="wallet-item">
+      <view class="wallet-value">{{user.coupons}}</view>
+      <view class="wallet-label">抽卡券</view>
+    </view>
+  </view>
+
+  <view class="compliance card-panel">
+    <view class="compliance-title">上线合规必备</view>
+    <view class="compliance-desc">概率公示、实名认证、未成年人保护、消费记录导出，建议作为首版基础能力。</view>
+  </view>
+
+  <view class="menu-list card-panel">
+    <view class="menu-item" wx:for="{{menus}}" wx:key="*this" data-name="{{item}}" bindtap="onMenuTap">
+      <view>{{item}}</view>
+      <view class="menu-arrow">›</view>
+    </view>
+  </view>
+</view>

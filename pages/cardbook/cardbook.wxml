@@ -1,0 +1,45 @@
+<view class="page-shell cardbook-page">
+  <view class="book-hero card-panel">
+    <view>
+      <view class="book-kicker">收藏进度</view>
+      <view class="book-title">{{progress}}%</view>
+      <view class="book-desc">集齐套卡可领取返券、限定徽章或回收加成。</view>
+    </view>
+    <view class="book-ring">
+      <view class="ring-inner">{{progress}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">套卡图鉴</view>
+    <view class="section-title-sub">补齐提高留存</view>
+  </view>
+
+  <view class="album-list">
+    <view class="album-card card-panel" wx:for="{{albums}}" wx:key="id">
+      <view class="album-cover" style="background: linear-gradient(135deg, {{item.color}}, #222231);">
+        <view class="album-mark">{{item.collected}}/{{item.total}}</view>
+      </view>
+      <view class="album-info">
+        <view class="album-name">{{item.name}}</view>
+        <view class="album-reward">{{item.reward}}</view>
+        <view class="album-track">
+          <view class="album-fill" style="width: {{item.collected * 100 / item.total}}%; background: {{item.color}};"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">最近收集</view>
+    <view class="section-title-sub">缺卡可跳赏盒</view>
+  </view>
+
+  <view class="card-grid">
+    <view class="collect-card {{item.owned ? 'card-owned' : 'card-missing'}}" wx:for="{{cards}}" wx:key="name">
+      <view class="collect-level">{{item.level}}</view>
+      <view class="collect-name">{{item.name}}</view>
+      <view class="collect-status">{{item.owned ? '已拥有' : '待解锁'}}</view>
+    </view>
+  </view>
+</view>

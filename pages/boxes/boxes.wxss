@@ -1,0 +1,164 @@
+.page-head {
+  padding: 12rpx 4rpx 8rpx;
+}
+
+.head-title {
+  font-size: 52rpx;
+  font-weight: 900;
+}
+
+.head-desc {
+  margin-top: 12rpx;
+  color: #a8a5b8;
+  font-size: 26rpx;
+}
+
+.category-scroll {
+  margin: 28rpx -28rpx 0;
+  white-space: nowrap;
+}
+
+.category-row {
+  display: flex;
+  gap: 16rpx;
+  padding: 0 28rpx;
+}
+
+.category-pill {
+  flex-shrink: 0;
+  padding: 18rpx 28rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.1);
+  border-radius: 999rpx;
+  color: #c6c2d7;
+  font-size: 25rpx;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.category-active {
+  color: #231800;
+  border-color: transparent;
+  font-weight: 800;
+  background: #ffcc4d;
+}
+
+.draw-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26rpx;
+  padding: 28rpx;
+}
+
+.draw-panel-title {
+  font-size: 30rpx;
+  font-weight: 850;
+}
+
+.draw-panel-desc {
+  width: 450rpx;
+  margin-top: 10rpx;
+  color: #a8a5b8;
+  font-size: 24rpx;
+  line-height: 1.5;
+}
+
+.draw-panel-badge {
+  padding: 14rpx 18rpx;
+  border-radius: 18rpx;
+  color: #211600;
+  font-size: 22rpx;
+  font-weight: 800;
+  background: #ffcc4d;
+}
+
+.box-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+  margin-top: 26rpx;
+}
+
+.box-item {
+  overflow: hidden;
+}
+
+.box-visual {
+  position: relative;
+  height: 250rpx;
+}
+
+.box-category {
+  position: absolute;
+  left: 28rpx;
+  top: 26rpx;
+  padding: 10rpx 18rpx;
+  border-radius: 999rpx;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 23rpx;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.box-symbol {
+  position: absolute;
+  right: 28rpx;
+  bottom: -24rpx;
+  color: rgba(255, 255, 255, 0.18);
+  font-size: 190rpx;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.box-content {
+  padding: 28rpx;
+}
+
+.box-title {
+  font-size: 36rpx;
+  font-weight: 900;
+}
+
+.box-stock {
+  margin-top: 12rpx;
+  color: #a8a5b8;
+  font-size: 24rpx;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+  margin-top: 20rpx;
+}
+
+.prize-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+  margin-top: 24rpx;
+}
+
+.prize-row {
+  padding: 18rpx 20rpx;
+  border-radius: 18rpx;
+  color: #ded9ec;
+  font-size: 25rpx;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26rpx;
+}
+
+.price {
+  color: #ffdf7e;
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.draw-button {
+  width: 170rpx;
+  height: 72rpx;
+}

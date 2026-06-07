@@ -1,0 +1,43 @@
+<view class="page-shell boxes-page">
+  <view class="page-head">
+    <view class="head-title">赏盒广场</view>
+    <view class="head-desc">按 IP、玩法和稀有度找你的下一盒。</view>
+  </view>
+
+  <scroll-view scroll-x class="category-scroll" show-scrollbar="false">
+    <view class="category-row">
+      <view wx:for="{{categories}}" wx:key="*this" class="category-pill {{activeCategory === item ? 'category-active' : ''}}" data-category="{{item}}" bindtap="selectCategory">{{item}}</view>
+    </view>
+  </scroll-view>
+
+  <view class="draw-panel card-panel">
+    <view>
+      <view class="draw-panel-title">抽卡核心策略</view>
+      <view class="draw-panel-desc">一期采用不放回抽样：剩余奖品池实时变化，LAST 赏真实可追踪。</view>
+    </view>
+    <view class="draw-panel-badge">公平公示</view>
+  </view>
+
+  <view class="box-grid">
+    <view class="box-item card-panel" wx:for="{{boxes}}" wx:key="id" wx:if="{{activeCategory === '全部' || activeCategory === item.category}}">
+      <view class="box-visual" style="background: radial-gradient(circle at 28% 18%, {{item.color}}, transparent 42%), linear-gradient(145deg, #242434, #101018);">
+        <view class="box-category">{{item.category}}</view>
+        <view class="box-symbol">{{item.symbol}}</view>
+      </view>
+      <view class="box-content">
+        <view class="box-title">{{item.title}}</view>
+        <view class="box-stock">{{item.stockText}}</view>
+        <view class="tag-row">
+          <view class="tag" wx:for="{{item.tags}}" wx:key="*this">{{item}}</view>
+        </view>
+        <view class="prize-list">
+          <view class="prize-row" wx:for="{{item.prizes}}" wx:key="*this">{{item}}</view>
+        </view>
+        <view class="action-row">
+          <view class="price">¥{{item.price}} / 抽</view>
+          <button class="primary-button draw-button" data-title="{{item.title}}" bindtap="startDraw">开抽</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

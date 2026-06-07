@@ -1,0 +1,148 @@
+.book-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 300rpx;
+  padding: 38rpx;
+}
+
+.book-kicker {
+  color: #ffdf7e;
+  font-size: 24rpx;
+  font-weight: 800;
+}
+
+.book-title {
+  margin-top: 14rpx;
+  font-size: 78rpx;
+  font-weight: 950;
+}
+
+.book-desc {
+  width: 390rpx;
+  margin-top: 12rpx;
+  color: #a8a5b8;
+  font-size: 25rpx;
+  line-height: 1.55;
+}
+
+.book-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178rpx;
+  height: 178rpx;
+  border-radius: 50%;
+  background: conic-gradient(#ffcc4d 0 62%, rgba(255, 255, 255, 0.1) 62% 100%);
+}
+
+.ring-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 50%;
+  color: #ffdf7e;
+  font-size: 34rpx;
+  font-weight: 900;
+  background: #15151f;
+}
+
+.album-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.album-card {
+  display: flex;
+  padding: 18rpx;
+}
+
+.album-cover {
+  position: relative;
+  width: 146rpx;
+  height: 146rpx;
+  border-radius: 26rpx;
+}
+
+.album-mark {
+  position: absolute;
+  left: 14rpx;
+  bottom: 14rpx;
+  padding: 8rpx 12rpx;
+  border-radius: 999rpx;
+  color: #fff;
+  font-size: 22rpx;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.album-info {
+  flex: 1;
+  padding: 12rpx 0 0 22rpx;
+}
+
+.album-name {
+  font-size: 30rpx;
+  font-weight: 850;
+}
+
+.album-reward {
+  margin-top: 12rpx;
+  color: #a8a5b8;
+  font-size: 24rpx;
+}
+
+.album-track {
+  height: 10rpx;
+  margin-top: 24rpx;
+  overflow: hidden;
+  border-radius: 999rpx;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.album-fill {
+  height: 10rpx;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18rpx;
+}
+
+.collect-card {
+  min-height: 220rpx;
+  padding: 24rpx;
+  border: 1rpx solid rgba(255, 255, 255, 0.12);
+  border-radius: 28rpx;
+}
+
+.card-owned {
+  background: linear-gradient(145deg, rgba(255, 204, 77, 0.22), rgba(255, 255, 255, 0.06));
+}
+
+.card-missing {
+  filter: grayscale(1);
+  opacity: 0.58;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.collect-level {
+  color: #ffdf7e;
+  font-size: 28rpx;
+  font-weight: 900;
+}
+
+.collect-name {
+  margin-top: 58rpx;
+  font-size: 27rpx;
+  font-weight: 800;
+}
+
+.collect-status {
+  margin-top: 12rpx;
+  color: #a8a5b8;
+  font-size: 23rpx;
+}

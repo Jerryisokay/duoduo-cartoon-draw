@@ -1,0 +1,57 @@
+<view class="page-shell index-page">
+  <view class="hero card-panel">
+    <view class="hero-copy">
+      <view class="tag">今日主推 · 实时余量</view>
+      <view class="hero-title">抽走你的\n下一张神赏</view>
+      <view class="hero-desc">一番赏抽卡、卡册收集、仓库寄存与合并发货，一条链路完成。</view>
+      <button class="primary-button hero-button" bindtap="goBoxes">立即去抽卡</button>
+    </view>
+    <view class="hero-machine">
+      <view class="machine-orbit"></view>
+      <view class="machine-card card-a">A</view>
+      <view class="machine-card card-last">LAST</view>
+      <view class="machine-card card-b">B</view>
+    </view>
+  </view>
+
+  <view class="marquee card-panel">
+    <view class="marquee-dot"></view>
+    <swiper autoplay circular vertical interval="2400" duration="420" class="marquee-swiper">
+      <swiper-item wx:for="{{marquee}}" wx:key="*this">
+        <view class="marquee-text">{{item}}</view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="mission-grid">
+    <view class="mission-item card-panel" wx:for="{{missions}}" wx:key="label">
+      <view class="mission-label">{{item.label}}</view>
+      <view class="mission-value">{{item.value}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">热门赏盒</view>
+    <view class="section-title-sub">看准 LAST 再出手</view>
+  </view>
+
+  <view class="box-list">
+    <view class="box-card card-panel" wx:for="{{featuredBoxes}}" wx:key="id">
+      <view class="box-cover" style="background: radial-gradient(circle at 30% 20%, {{item.accent}}, transparent 42%), linear-gradient(135deg, #272735, #111119);">
+        <view class="box-ip">{{item.ip}}</view>
+        <view class="box-letter">賞</view>
+      </view>
+      <view class="box-info">
+        <view class="box-title">{{item.title}}</view>
+        <view class="box-meta">剩余 {{item.remaining}} / {{item.total}} · LAST {{item.lastPrize}}</view>
+        <view class="progress-track">
+          <view class="progress-fill" style="width: {{item.remaining * 100 / item.total}}%; background: {{item.accent}};"></view>
+        </view>
+        <view class="box-footer">
+          <view class="box-price">¥{{item.price}} / 抽</view>
+          <button class="ghost-button small-button" bindtap="goBoxes">查看</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

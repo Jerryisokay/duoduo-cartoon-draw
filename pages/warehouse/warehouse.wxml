@@ -1,0 +1,35 @@
+<view class="page-shell warehouse-page">
+  <view class="warehouse-hero card-panel">
+    <view>
+      <view class="warehouse-title">奖品仓库</view>
+      <view class="warehouse-desc">抽中的实物先寄存，支持合并发货、回收星币与后续转赠。</view>
+    </view>
+    <button class="primary-button ship-button" bindtap="shipTogether">合并发货</button>
+  </view>
+
+  <view class="summary-grid">
+    <view class="summary-card card-panel" wx:for="{{summary}}" wx:key="label">
+      <view class="summary-value">{{item.value}}</view>
+      <view class="summary-label">{{item.label}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">
+    <view class="section-title-main">仓库明细</view>
+    <view class="section-title-sub">资产状态可追踪</view>
+  </view>
+
+  <view class="warehouse-list">
+    <view class="warehouse-item card-panel" wx:for="{{items}}" wx:key="id">
+      <view class="item-level">{{item.level}}</view>
+      <view class="item-main">
+        <view class="item-name">{{item.name}}</view>
+        <view class="item-source">来源：{{item.source}}</view>
+        <view class="item-actions">
+          <view class="status-pill">{{item.status}}</view>
+          <view class="recycle-text">回收 {{item.recycle}} 星币</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

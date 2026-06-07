@@ -1,0 +1,109 @@
+.warehouse-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 240rpx;
+  padding: 34rpx;
+}
+
+.warehouse-title {
+  font-size: 46rpx;
+  font-weight: 900;
+}
+
+.warehouse-desc {
+  width: 410rpx;
+  margin-top: 14rpx;
+  color: #a8a5b8;
+  font-size: 25rpx;
+  line-height: 1.55;
+}
+
+.ship-button {
+  width: 180rpx;
+  height: 72rpx;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+  margin-top: 20rpx;
+}
+
+.summary-card {
+  padding: 24rpx 18rpx;
+  text-align: center;
+}
+
+.summary-value {
+  color: #ffdf7e;
+  font-size: 42rpx;
+  font-weight: 900;
+}
+
+.summary-label {
+  margin-top: 8rpx;
+  color: #a8a5b8;
+  font-size: 23rpx;
+}
+
+.warehouse-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.warehouse-item {
+  display: flex;
+  padding: 22rpx;
+}
+
+.item-level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104rpx;
+  height: 136rpx;
+  border-radius: 24rpx;
+  color: #1d1400;
+  font-size: 32rpx;
+  font-weight: 950;
+  background: linear-gradient(135deg, #ffe66b, #ffb32c);
+}
+
+.item-main {
+  flex: 1;
+  padding-left: 22rpx;
+}
+
+.item-name {
+  font-size: 30rpx;
+  font-weight: 850;
+}
+
+.item-source {
+  margin-top: 12rpx;
+  color: #a8a5b8;
+  font-size: 24rpx;
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+  margin-top: 24rpx;
+}
+
+.status-pill {
+  padding: 10rpx 16rpx;
+  border-radius: 999rpx;
+  color: #ffdf7e;
+  font-size: 22rpx;
+  background: rgba(255, 204, 77, 0.13);
+}
+
+.recycle-text {
+  color: #c6c2d7;
+  font-size: 23rpx;
+}
